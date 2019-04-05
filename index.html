@@ -1,13 +1,38 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+
     <meta charset="utf-8">
+
+    <title>San Diego Top Spots</title>
 </head>
 
 <body>
     <!-- Write your markup here -->
-
+    <h1>San Diego Top Spots</h1>
+    <table id = "myTableHeader" style="width:100%">
+        <!--<caption><b>San Diego Top Spots</b></caption>-->
+    <tr id = "myTable"></tr>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Description</th>
+                <th colspan="3">Link</th>
+            </tr>
+        </thead>
+        <!--<tfoot></tfoot>-->
+    </table>
+    
+    <div id="data-list"></div>  <!-- JS table header creation
+         vs HTML using <table id= and <tr id below this -->
     <!-- Don't forget to add your <script> tag here -->
+    <script src="main.js" charset="utf-8"></script>
+
 </body>
+
 </html>
